@@ -33,7 +33,7 @@ void Game::setUpSystem(const char* title,const size_t width,const size_t height)
   renderWindow_ = new sf::RenderWindow(sf::VideoMode(width,height),title);
    
   texture_     = new sf::Texture(); 
-  texture_->loadFromFile("tileSpriteDonkeyKong.png");
+  texture_->loadFromFile("assets/tileSpriteDonkeyKong.png");
   tile_.setTexture(*texture_);
   
   player_      = std::make_unique<Player>(*texture_);

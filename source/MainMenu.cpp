@@ -19,7 +19,7 @@ MainMenu::MainMenu()
   movingShape_.setOutlineColor(sf::Color::White);
 
   font_ = new sf::Font();
-  font_->loadFromFile("arial.ttf"); 
+  font_->loadFromFile("assets/arial.ttf"); 
 
   startText_ = new sf::Text();
   startText_->setFont(*font_);
@@ -45,7 +45,7 @@ MainMenu::MainMenu()
   exitText_->setString("EXIT");
 
   texture = new sf::Texture();
-  texture->loadFromFile("DonkeyKongLike.png");
+  texture->loadFromFile("assets/DonkeyKongLike.png");
 
   donkeyName_ = new sf::Sprite();
   donkeyName_->setScale(0.5,0.5);
